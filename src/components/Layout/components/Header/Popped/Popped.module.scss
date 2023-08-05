@@ -1,0 +1,29 @@
+
+.wrapper {
+    width: var(--default-width-search);
+    // min-height: 500px;
+    margin-top: -2px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+}
+
+.title {
+    padding: 5px 12px 3px 12px;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.4rem;
+    line-height: 22px;
+}
+
+.options {
+    // display: flex;
+}
+
+.option {
+    padding: 9px 16px;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+

@@ -1,0 +1,51 @@
+.container {
+    margin-top: var(--default-layout-height-header);
+    width: var(--default-layout-width-sideBar);
+    min-height: 1000px;
+    padding: 20px 0 26px 8px;
+    background-color: var(--white);
+    position: fixed;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    line-height: 0.7;
+    cursor: pointer;
+    Button {
+        cursor: pointer;
+        color: var(--black);
+    }
+}
+
+.icon {
+    margin-right: 8px;
+    
+    svg {
+        font-size: 32px;
+    }
+    
+    path {
+        fill: var(--black);
+        font-size: 22px;
+    }
+}
+
+.active {
+    svg {
+        path {
+            fill: var(--primary-color);
+        }
+    }
+
+    Button {
+        color: var(--primary-color);
+    }
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: red;
+}

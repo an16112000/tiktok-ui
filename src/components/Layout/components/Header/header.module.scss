@@ -1,0 +1,199 @@
+:root {
+    --default-width-search: 500px;
+    --default-width-button-search: 52px;
+    --default-width-icon-close: 16px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: var(--default-layout-height-header, 60px);
+    padding-left: 16px;
+    padding-right: 24px;
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 1px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+.logo {
+    flex: 1;
+
+    svg {
+        cursor: pointer;
+    }
+
+    .tiktokLogo {
+        width: 118px;
+        height: 42px;
+        color: var(--black);
+
+        path {
+            fill: currentColor
+        }
+    }
+}
+
+.search-container {
+    width: var(--default-width-search);
+    height: 46px;
+    flex: 1;
+}
+
+// .search {
+//     width: var(--default-width-search);
+//     display: flex;
+//     align-items: center;
+//     height: 100%;
+//     background-color: #f1f1f2;
+//     border-radius: 92px;
+//     padding-left: 16px;
+//     border: 1px solid transparent;
+//     position: relative;
+
+//     .search-input {
+//         flex: 1;
+//         color: var(--black);
+//         height: 100%;
+//         font-family: initial;
+//         background-color: #f1f1f2;
+//         outline: none;
+//     }
+
+//     input {
+//         width: 100%;
+//         border: none;
+//         background-color: #f1f1f2;
+//         height: 100%;
+//         outline: none;
+//     }
+
+//     input:not(:placeholder-shown)~button {
+//         opacity: 1;
+//     }
+
+//     span {
+//         background-color: rgba(22, 24, 35, .12);
+//         width: 1px;
+//         height: 28px;
+//     }
+
+//     .search-btn {
+//         background-color: #f1f1f2;
+//         border: none;
+//         cursor: pointer;
+//         height: 100%;
+//         border-top-right-radius: 92px;
+//         border-bottom-right-radius: 92px;
+//         width: var(--default-width-button-search);
+
+//         &:active {
+//             background-color: rgba(22, 24, 35, 0.03);
+//         }
+//     }
+
+//     i {
+//         margin: 12px;
+//     }
+
+//     .close-icon,
+//     i {
+//         position: absolute;
+//         right: 52px;
+//     }
+
+//     &:hover {
+//         button {
+//             background-color: rgba(22, 24, 35, 0.08);
+//             opacity: 0.7;
+//         }
+//     }
+
+//     &:focus-within {
+//         border-color: rgba(22, 24, 35, 0.2);
+//     }
+// }
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+
+    .upload {
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        border: none;
+        line-height: 21px;
+        font-family: 'TikTokFontRegular';
+        font-weight: 600;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    .login {
+        height: var(--default-layout-height-button-header);
+        margin-right: var(--default-layout-margin-button-header);
+        padding: var(--default-layout-padding-button-header);
+        width: 100px;
+        border: none;
+        background-color: rgba(254, 44, 85, 1);
+        color: var(--white);
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #FE2C55;
+            ;
+        }
+    }
+
+    .menu {
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+}
+
+.menu {
+    cursor: pointer;
+
+    path {
+        color: var(--black);
+    }
+}
+
+.temp {
+    width: var(--default-width-search);
+}
+
+.action {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-left: 16px;
+    cursor: pointer;
+
+    svg {
+        width: 2.6rem;
+        height: 2.6rem;
+
+        path {
+            width: 100%;
+            height: 100%;
+            fill: var(--black);
+        }
+    }
+}
+
+.avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    margin-left: 24px;
+    cursor: pointer;
+}

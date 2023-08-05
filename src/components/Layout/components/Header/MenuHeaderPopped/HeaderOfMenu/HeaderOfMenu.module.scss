@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 16px 0;
+    cursor: pointer;
+    i {
+        width: 36px;
+        text-align: center;
+        font-size: 1.6rem;
+        color: var(--black);
+    }
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: 0px auto;
+    font-size: 1.6rem;
+    line-height: 21px;
+    font-weight: 600;
+    letter-spacing: 0.03;
+    color: var(--black);
+}
